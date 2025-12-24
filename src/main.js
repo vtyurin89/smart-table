@@ -46,6 +46,8 @@ function render(action) {
 
     result = applyPagination(result, state, action);
 
+    result = applyFiltering(result, state, action);
+
     sampleTable.render(result)
 }
 
