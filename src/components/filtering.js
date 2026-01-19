@@ -44,25 +44,4 @@ export function initFiltering(elements, indexes) {
         updateIndexes,
         applyFiltering
     }
-
-    // return (data, state, action) => {
-    //     // @todo: #4.2 — обработать очистку поля
-    //     if (action?.name === 'clear') {
-    //         const parentElement = action.closest('.filter-field') ?? action.parentElement;
-    //         const inputField = parentElement?.querySelector('input[type="text"], input[type="search"]');
-    //         const fieldName = action.dataset.field;
-
-    //         if (inputField) {
-    //             inputField.value = '';
-    //             inputField.dispatchEvent(new Event('change', {bubbles: true}));
-    //         }
-
-    //         if (fieldName) {
-    //             state[fieldName] = '';
-    //         }
-    //     }
-
-    //     // @todo: #4.5 — отфильтровать данные используя компаратор
-    //     return data.filter(row => compare(row, state));
-    // }
 }
